@@ -1,0 +1,17 @@
+# Python (backend-auth)
+.venv/
+__pycache__/
+*.pyc
+*.db
+.env
+
+# macOS
+.DS_Store
+
+# IDEs & local tools
+.claude/
+.idea/
+.vscode/
+*.swp
+
+# Las reglas de la app móvil están en mobile-app/.gitignore

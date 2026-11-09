@@ -1,0 +1,18 @@
+{
+  "name": "taller-totp",
+  "private": true,
+  "description": "Atajos para ejecutar desde la raíz los comandos de mobile-app y backend-auth",
+  "scripts": {
+    "start": "npm --prefix mobile-app start --",
+    "android": "npm --prefix mobile-app run android --",
+    "adb:reverse": "adb reverse tcp:8000 tcp:8000",
+    "qr": "npm --prefix mobile-app run qr --",
+    "totp": "npm --prefix mobile-app run totp --",
+    "typecheck": "npm --prefix mobile-app run typecheck",
+    "backend": "cd backend-auth && .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload",
+    "backend:setup": "cd backend-auth && uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements-dev.txt",
+    "test": "npm run test:app && npm run test:backend",
+    "test:app": "npm --prefix mobile-app test --",
+    "test:backend": "cd backend-auth && .venv/bin/python -m pytest -q"
+  }
+}
