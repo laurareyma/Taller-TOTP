@@ -1,7 +1,5 @@
 # Taller Seguridad Móvil — OAuth 2.0 + PKCE y Step-Up 2FA (TOTP)
 
-Universidad de La Sabana · Desarrollo Móvil · Sesión 14
-
 ```
 /mobile-app     App en Expo (React Native + TypeScript)
 /backend-auth   Servidor de autorización y API (FastAPI)
